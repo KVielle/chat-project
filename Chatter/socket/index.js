@@ -2,7 +2,15 @@ const { Server } = require("socket.io");
 
 
 //change this to live site url
-const io = new Server({ cors: "chat-project-one.vercel.app" });
+
+const allowedOrigins = ['https://chat-project-one.vercel.app', 'https://chatter-jzch.onrender.com'];
+
+const io = new Server({
+    cors: {
+        origin: allowedOrigins,
+        methods: ["GET", "POST"]
+    }
+});
 
 let onlineUsers = [];
 
