@@ -24,7 +24,7 @@ export const ChatContextProvider = ({children, user}) => {
     
 
     useEffect(() => {
-        const newSocket = io("https://chatter-jzch.onrender.com");
+        const newSocket = io("https://chatter-jzch.onrender.com:10000");
         setSocket(newSocket);
 
         return () => {
