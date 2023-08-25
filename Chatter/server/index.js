@@ -25,7 +25,10 @@ app.use("/api/users", userRoute);
 app.use("/api/chats", chatRoute);
 app.use("/api/messages", messageRoute);
 
-app.get('/hello', (_, res) => res.send('Hello from ME'))
+app.get('/hello', (_, res) => {
+    console.log('Received /hello request');
+    res.send('Hello from ME');
+});
 
 app.get("/", (req, res) => {
     res.send("Welcome to Chatter APIs")
