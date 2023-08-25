@@ -1,4 +1,4 @@
-export const baseUrl = "https://chatter-jzch.onrender.com"
+export const baseUrl = "chat-project-one.vercel.app"
 
 export const postRequest = async(url, body) => {
     const response = await fetch(url, {
