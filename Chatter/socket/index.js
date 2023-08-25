@@ -2,7 +2,7 @@ const { Server } = require("socket.io");
 
 
 //change this to live site url
-const io = new Server({ cors: "http://localhost:5173" });
+const io = new Server({ cors: "chat-project-one.vercel.app" });
 
 let onlineUsers = [];
 
