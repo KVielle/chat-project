@@ -3,7 +3,7 @@ const { Server } = require("socket.io");
 
 //change this to live site url
 
-const allowedOrigins = ['https://chat-project-beryl.vercel.app/', 'https://chatter-jzch.onrender.com'];
+const allowedOrigins = ['https://chat-project-beryl.vercel.app', 'https://chatter-jzch.onrender.com'];
 
 const io = new Server({
     cors: {
