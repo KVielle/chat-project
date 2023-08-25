@@ -8,7 +8,7 @@ const messageRoute = require("./Routes/messageRoute")
 const app = express()
 require("dotenv").config()
 
-const allowedOrigins = ['https://chat-project-5nxeo4xxz-kvielle.vercel.app/'];
+const allowedOrigins = ['https://chat-project-5nxeo4xxz-kvielle.vercel.app'];
 
 app.use(express.json());
 app.use(cors({
