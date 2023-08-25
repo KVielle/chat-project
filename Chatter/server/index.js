@@ -12,7 +12,7 @@ require("dotenv").config()
 
 app.use(express.json());
 app.use((req, res, next) => {
-    const allowedOrigins = ['https://chat-project-beryl.vercel.app/', 'https://chatter-jzch.onrender.com'];
+    const allowedOrigins = ['https://chat-project-beryl.vercel.app', 'https://chatter-jzch.onrender.com'];
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {
         res.setHeader('Access-Control-Allow-Origin', origin);
