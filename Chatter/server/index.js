@@ -21,9 +21,9 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Methods', '*');
     next();
     })
-app.use("/users", userRoute);
-app.use("/chats", chatRoute);
-app.use("/messages", messageRoute);
+app.use("/api/users", userRoute);
+app.use("/api/chats", chatRoute);
+app.use("/api/messages", messageRoute);
 
 app.get('/hello', (_, res) => {
     console.log('Received /hello request');
