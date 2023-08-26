@@ -1,4 +1,4 @@
-export const baseUrl = "https://chatter-jzch.onrender.com:10000"
+export const baseUrl = "https://chatter-jzch.onrender.com:80"
 
 export const postRequest = async(url, body) => {
     const response = await fetch(url, {

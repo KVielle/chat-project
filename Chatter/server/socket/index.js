@@ -51,4 +51,4 @@ io.on("connection", (socket) => {
     })
 });
 
-io.listen(10000);
+io.listen(80);
